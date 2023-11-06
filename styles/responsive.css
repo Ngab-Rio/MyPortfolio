@@ -1,0 +1,126 @@
+
+@media screen and (max-width:1800px) {
+    .burger{
+        display: none;
+    }
+    .ska img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3{
+        gap: 1rem;
+    }
+    
+    .skills-right ul li{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .toggle-burger .line1{
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+    .toggle-burger .line2{
+        opacity: 0;
+    }
+    .toggle-burger .line3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    p {
+        font-size: 0.01rem;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .logo a{
+        z-index: 99;
+    }
+
+    nav{
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: var(--primaryBgColor);
+        border-left: 1px solid var(--borderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in-out;
+    }
+    nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .nav-active{
+        transform: translateX(0);
+    }
+    .skills-list div{
+        display: grid;
+        font-size: 0.9rem;
+        grid-template-columns: 1fr;
+    }
+    .hero-name{
+        font-size: 1.3rem;
+    }
+    .section-title{
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+    }
+    .pre-title{
+        font-size: 0.8rem;
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-right{
+        order: -1;
+    }
+    footer{
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    p{
+        font-size: .01rem;
+    }
+    
+    #hero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .hero-name{
+        font-size: 1.3rem;
+    }
+    
+    .hero-right{
+        order: 5;
+    }
+    .section-title{
+        font-size: 1.3rem;
+    }
+    .pre-title{
+        font-size: 0.7rem;
+    }
+}
+    
+
+
+
